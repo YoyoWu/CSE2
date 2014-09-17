@@ -21,9 +21,16 @@ public class FourDigits{
         
         double x = myScanner.nextDouble();      //accept user input
         
+        int st,nd,rd,th;  //define variables
+        
+        //formulas
+        st=(int)(x*10)%10;
+        nd=(int)(x*100)%10;
+        rd=(int)(x*1000)%10;
+        th=(int)(x*10000)%10;
+        
         System.out.println("Enter a double and I display the four digits to the right of the decimal point- " + x);
-        System.out.println("The four digits are "+ (int)(((int) x)*10000)/10000 + (int)(((int) x)*1000)/1000 + (int)(((int) x)*100)/100
-        +(int)(((int) x)*10)/10);
+        System.out.println("The four digits are "+ st+nd+rd+th);
         
     }//end method
 }//end class 
